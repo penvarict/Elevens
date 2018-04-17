@@ -132,7 +132,7 @@ public class Shuffler {
 	// 	if (r < 0.25){
 	// 		return tails;
 	// 	}	
-	// 	else if (r >.25){
+	// 	else if (r 0>.25){
 	// 		return heads;
 	// 	}
 	// }

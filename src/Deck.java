@@ -62,7 +62,18 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */	
+
+		for( int k = cards.size()- 1; k >= 0; k-- ) {
+			int r = (int)(Math.random() * k); //create random spot
+			Card tmp = cards.get(r); // set temporary card equal to card in random spot, temp card is card at r
+			cards.set(r, cards.get(k)); // overwrite card at spot k, set it to card r
+			cards.set(k,tmp); // add card k to spot r
+
+			
+		}
+	
+		
 	}
 
 	/**

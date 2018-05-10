@@ -1,0 +1,5 @@
+1. Size is just a variable that is changed by the abstract method of board. Size is part of board so it would make no sense to make it a function.
+
+2. You wouldn't need another abstract method if you are shuffling in the same manner. For example even though you may be moving different cards, you are still using the same process of shuffling.
+
+3. It would work, however there is no need for it. because a board is an object, then if you have to create a different board you could just create a different type of board with a minor change to a variable. Using an interface in the standard elevens board class to change the board's properties would be inefficient because you would have to write multiple interfaces for different games. by using an abstact class, if you need a new board you just create a slightly different child class from the standard board class.
